@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Healing Rain Ministry - Library</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <header class="main-header">
+  <div class="container">
+    <h1 class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Healing Rain Ministry Logo">
+      </a>
+    </h1>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="prayer.html">Prayer Request</a></li>
+        <li><a href="donation.html">Donate</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </div>
+</header>
+
+   <section class="page-hero" style="background-image: url('images/library-bg.jpg');"> <div class="container">
+           <h2>Our Spiritual Library</h2>
+           <p>Dive deeper into God's Word with our growing collection of Christian books and resources.</p>
+       </div>
+   </section>
+
+   <section class="library-section">
+       <div class="container">
+           <h3>Explore Our Collection</h3>
+           <p class="intro-text">We are continuously adding new resources to help you grow in your faith and understanding. Click on a book to read or download it.</p>
+
+           <div class="book-categories">
+               <button class="category-btn active" data-category="all">All Books</button>
+               <button class="category-btn" data-category="faith">Faith & Devotion</button>
+               <button class="category-btn" data-category="healing">Healing & Deliverance</button>
+               <button class="category-btn" data-category="leadership">Leadership & Ministry</button>
+               </div>
+
+           <div class="book-grid">
+               <div class="book-item" data-category="faith">
+                   <img src="images/book-cover-1.jpg" alt="Book Title 1 Cover">
+                   <h4>The Power of Prayer</h4>
+                   <p class="author">By Author Name</p>
+                   <a href="documents/book1-power-of-prayer.pdf" target="_blank" class="btn btn-primary">Read / Download <i class="fas fa-download"></i></a>
+               </div>
+
+               <div class="book-item" data-category="healing">
+                   <img src="images/book-cover-2.jpg" alt="Book Title 2 Cover">
+                   <h4>Divine Healing Principles</h4>
+                   <p class="author">By Author Name</p>
+                   <a href="documents/book2-divine-healing.pdf" target="_blank" class="btn btn-primary">Read / Download <i class="fas fa-download"></i></a>
+               </div>
+
+               <div class="book-item" data-category="leadership">
+                   <img src="images/book-cover-3.jpg" alt="Book Title 3 Cover">
+                   <h4>Foundations of Leadership</h4>
+                   <p class="author">By Author Name</p>
+                   <a href="documents/book3-leadership.pdf" target="_blank" class="btn btn-primary">Read / Download <i class="fas fa-download"></i></a>
+               </div>
+
+               <div class="book-item" data-category="faith">
+                   <img src="images/book-cover-placeholder.png" alt="Book Title 4 Cover">
+                   <h4>Growing in Grace</h4>
+                   <p class="author">By Author Name</p>
+                   <a href="documents/book4-growing-in-grace.pdf" target="_blank" class="btn btn-primary">Read / Download <i class="fas fa-download"></i></a>
+               </div>
+
+               <div class="book-item" data-category="healing">
+                   <img src="images/book-cover-placeholder.png" alt="Book Title 5 Cover">
+                   <h4>Restored Through Faith</h4>
+                   <p class="author">By Author Name</p>
+                   <a href="documents/book5-restored-faith.pdf" target="_blank" class="btn btn-primary">Read / Download <i class="fas fa-download"></i></a>
+               </div>
+
+           </div>
+
+           <div class="upload-info">
+               <h4>Have a Book to Share?</h4>
+               <p>If you have Christian resources or books you believe would benefit our community, please <a href="mailto:resources@healingrainministry.org">contact us</a>. We're open to expanding our library with valuable content (subject to review).</p>
+           </div>
+       </div>
+   </section>
+
+   <footer class="main-footer">
+       <div class="container">
+           <div class="footer-content">
+               <div class="footer-col">
+                   <h4>Healing Rain Ministry</h4>
+                   <p>Bringing God's healing touch to hearts and lives around the globe through prayer and faith.</p>
+               </div>
+               <div class="footer-col">
+                   <h4>Quick Links</h4>
+                   <ul>
+                       <li><a href="index.html">Home</a></li>
+                       <li><a href="prayer.html">Prayer Request</a></li>
+                       <li><a href="donation.html">Donate</a></li>
+                       <li><a href="library.html">Library</a></li>
+                   </ul>
+               </div>
+               <div class="footer-col">
+                   <h4>Connect With Us</h4>
+                   <p>Email: <a href="mailto:info@healingrainministry.org">info@healingrainministry.org</a></p>
+                   <div class="social-links">
+                       <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                       <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                       <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                   </div>
+               </div>
+           </div>
+           <div class="footer-bottom">
+               <p>© <span id="current-year-footer"></span> Healing Rain Ministry. All rights reserved.</p>
+           </div>
+       </div>
+   </footer>
+
+   <script src="js/script.js"></script>
+   <script>
+       document.getElementById('current-year-footer').textContent = new Date().getFullYear();
+
+       // JavaScript for category filtering
+       document.addEventListener('DOMContentLoaded', function() {
+           const categoryButtons = document.querySelectorAll('.category-btn');
+           const bookItems = document.querySelectorAll('.book-item');
+
+           categoryButtons.forEach(button => {
+               button.addEventListener('click', () => {
+                   const category = button.dataset.category;
+
+                   // Remove active class from all buttons
+                   categoryButtons.forEach(btn => btn.classList.remove('active'));
+                   // Add active class to the clicked button
+                   button.classList.add('active');
+
+                   bookItems.forEach(item => {
+                       if (category === 'all' || item.dataset.category === category) {
+                           item.style.display = 'block'; // Show item
+                       } else {
+                           item.style.display = 'none'; // Hide item
+                       }
+                   });
+               });
+           });
+       });
+   </script>
+</body>
+</html>
