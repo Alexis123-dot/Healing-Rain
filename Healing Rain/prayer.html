@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Healing Rain Ministry - Prayer Request</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header class="main-header">
+  <div class="container">
+    <h1 class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Healing Rain Ministry Logo">
+      </a>
+    </h1>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="donation.html">Donate</a></li>
+        <li><a href="library.html">Library</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero" style="background-image: url('images/prayer-bg.jpg');">
+  <div class="container">
+    <h2>Healing Rain: Submit Your Prayer Request</h2>
+    <p>Let us stand with you in faith. Your burdens are not yours to carry alone.</p>
+  </div>
+</section>
+
+<section class="form-section">
+  <div class="container">
+    <h3>Submit Your Prayer Request</h3>
+    <p>Please share your prayer request below. Our dedicated prayer team will lift you up in prayer.</p>
+
+    <!-- FIXED FORM WITH FORMSPREE -->
+    <form action="https://formspree.io/f/xanbegdd" method="POST" class="prayer-form">
+      <div class="form-group">
+        <label for="name">Your Name (Optional)</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email (Optional, for updates)</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address">
+      </div>
+      <div class="form-group">
+        <label for="prayer-request">Your Prayer Request <span class="required">*</span></label>
+        <textarea id="prayer-request" name="message" rows="8" placeholder="Share your prayer request here..." required></textarea>
+      </div>
+      <div class="form-group checkbox-group">
+        <input type="checkbox" id="public-share" name="public-share">
+        <label for="public-share">I agree to my request being shared anonymously on a "Testimonies" page (optional)</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit Prayer Request</button>
+    </form>
+
+    <hr>
+
+    <h3>Request One-on-One Live Prayer</h3>
+    <p>If you desire a more personal, direct prayer session with one of our intercessors, please schedule a time:</p>
+    <div class="one-on-one-prayer">
+      <a href="https://calendly.com/otenalex1/30min" target="_blank" class="btn btn-secondary">Schedule a Prayer Session</a>
+      <p class="small-text">You will be redirected to our scheduling page where you can choose a convenient time for a call or video prayer session.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-col">
+        <h4>Healing Rain Ministry</h4>
+        <p>Bringing God's healing touch to hearts and lives around the globe through prayer and faith.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prayer.html">Prayer Request</a></li>
+          <li><a href="donation.html">Donate</a></li>
+          <li><a href="library.html">Library</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect With Us</h4>
+        <p>Email: <a href="mailto:info@healingrainministry.org">info@healingrainministry.org</a></p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="current-year-footer"></span> Healing Rain Ministry. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+  document.getElementById('current-year-footer').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
